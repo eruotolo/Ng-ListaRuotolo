@@ -29,7 +29,7 @@
                         <td appTextPropiedades>{{ alumno.nombre }}</td>
                         <td appTextPropiedades>{{ alumno.apellido }}</td>
                         <td appTextPropiedades>{{ alumno.edad }}</td>
-                        <td appTextPropiedades><p *ngIf="estado; else aprobadoTemplate">Aprobado</p></td>
+                        <td appTextPropiedades><p *ngIf="estado; else aprobadoTemplate">Aprobado {{ today | date: 'dd-MM-YYYY'}}</p></td>
                         <td><button (click)="estado = !estado" >Habilitar</button></td>
                     </tr>
                 </tbody>

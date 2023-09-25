@@ -15,6 +15,9 @@ export class AlumnosComponent {
     ]
 
     estado = true;
+
+    today = new Date();
+
     //alumnos = ['Carlos', 'Manuel', 'Enzo', 'Roberto', 'Tomas', 'Gorge', 'Vladimir'];
 
     /*alumnos = [
