@@ -17,4 +17,6 @@ export class EjemplosComponent {
         };
     }
 
+    heroes = ['Batman', 'Robin', 'Guasón', 'Riddler', 'Sr.Frio', 'Hugo Strange'];
+
 }

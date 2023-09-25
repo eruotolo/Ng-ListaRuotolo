@@ -9,6 +9,7 @@ import { PageWrapperComponent } from './page-wrapper/page-wrapper.component';
 import { EjemplosComponent } from './home/ejemplos/ejemplos.component';
 import { RoundedBlockDirective } from './home/directives/rounded-block.directive';
 import { TextPropiedadesDirective } from './home/directives/text-propiedades.directive';
+import { AlumnosComponent } from './home/alumnos/alumnos.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { TextPropiedadesDirective } from './home/directives/text-propiedades.dir
     PageWrapperComponent,
     EjemplosComponent,
     RoundedBlockDirective,
-    TextPropiedadesDirective
+    TextPropiedadesDirective,
+    AlumnosComponent
   ],
   imports: [
     BrowserModule

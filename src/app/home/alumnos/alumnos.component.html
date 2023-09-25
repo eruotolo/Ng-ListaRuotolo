@@ -1,0 +1,43 @@
+<h3>Listado de Alumnos</h3>
+<!--<div class="container">
+    <div class="row">
+        <div class="col">
+            <ul>
+                <li appTextPropiedades *ngFor="let alumno of alumnos">{{ alumno }}</li>
+            </ul>
+        </div>
+    </div>
+</div>-->
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Edad</th>
+                        <th>Pasante</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let alumno of alumnos">
+                        <td appTextPropiedades>{{ alumno.id }}</td>
+                        <td appTextPropiedades>{{ alumno.nombre }}</td>
+                        <td appTextPropiedades>{{ alumno.apellido }}</td>
+                        <td appTextPropiedades>{{ alumno.edad }}</td>
+                        <td appTextPropiedades><p *ngIf="estado; else aprobadoTemplate">Aprobado</p></td>
+                        <td><button (click)="estado = !estado" >Habilitar</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<ng-template #aprobadoTemplate>
+    <p>ReAprobado</p>
+</ng-template>
