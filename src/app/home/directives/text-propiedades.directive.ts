@@ -41,7 +41,7 @@ export class TextPropiedadesDirective {
         this.renderer.setStyle(this.elementRef.nativeElement, 'cursor', 'pointer')
     }
     setAncho(){
-        this.renderer.setStyle(this.elementRef.nativeElement, 'width', '200px')
+        this.renderer.setStyle(this.elementRef.nativeElement, 'width', 'auto')
     }
     @HostListener('mouseenter') onMouseEnter() {
         this.renderer.setStyle(this.elementRef.nativeElement, 'background-color', '#677BE0'); // Cambia 'blue' al color deseado

@@ -14,8 +14,6 @@ export class AlumnosComponent {
         {id: 5, nombre: 'Gorge', apellido: 'Avila', edad: '42 años', estado: false},
     ]
 
-    estado = false;
-
     today = new Date();
 
     //alumnos = ['Carlos', 'Manuel', 'Enzo', 'Roberto', 'Tomas', 'Gorge', 'Vladimir'];
