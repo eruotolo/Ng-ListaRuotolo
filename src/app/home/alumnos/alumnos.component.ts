@@ -7,14 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AlumnosComponent {
     alumnos = [
-        {id: 1, nombre: 'Carlos', apellido: 'Lopez', edad: '20 años'},
-        {id: 2, nombre: 'Manuel', apellido: 'Ibañez', edad: '39 años'},
-        {id: 3, nombre: 'Roberto', apellido: 'Lapaz', edad: '6 años'},
-        {id: 4, nombre: 'Tomas', apellido: 'Vazquez', edad: '38 años'},
-        {id: 5, nombre: 'Gorge', apellido: 'Avila', edad: '42 años'},
+        {id: 1, nombre: 'Carlos', apellido: 'Lopez', edad: '20 años', estado: false},
+        {id: 2, nombre: 'Manuel', apellido: 'Ibañez', edad: '39 años', estado: false},
+        {id: 3, nombre: 'Roberto', apellido: 'Lapaz', edad: '6 años', estado: false},
+        {id: 4, nombre: 'Tomas', apellido: 'Vazquez', edad: '38 años', estado: false},
+        {id: 5, nombre: 'Gorge', apellido: 'Avila', edad: '42 años', estado: false},
     ]
 
-    estado = true;
+    estado = false;
 
     today = new Date();
 
@@ -27,6 +27,5 @@ export class AlumnosComponent {
         ['Tomas', ' Vazquez ', ' 38 años'],
         ['Gorge', ' Avila ', ' 42 años'],
     ]*/
-
 
 }
